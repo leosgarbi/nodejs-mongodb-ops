@@ -31,6 +31,7 @@ function cleanText(text) {
     .replace(/\r?\n|\r/g, ' ') // quebra de linha -> espaço
     .replace(/\t/g, ' ') // tabulação -> espaço
     .replace(/\s+/g, ' ') // compacta múltiplos espaços
+    .normalize('NFD') // Normaliza acentuação Unicode
     .trim();
 }
 
