@@ -8,9 +8,6 @@
  *  - JSON completo
  *  - CSV (para visualização rápida ou import em planilhas)
  *
- * 🔧 Como usar:
- *   node export_or_backup.js
- *
  * 💡 Dica:
  * - Altere o nome da collection (COLLECTION_NAME)
  * - Ajuste a query conforme a necessidade

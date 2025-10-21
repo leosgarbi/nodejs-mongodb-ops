@@ -6,9 +6,6 @@
  * dados de usuários e insere cada um como um novo documento
  * na collection definida.
  *
- * 🔧 Como usar:
- *   node import_users.js
- *
  * 📄 Estrutura esperada do user.json:
  * [
  *   { "Name": "João", "Surname": "Silva", "Email": "joao@teste.com" },

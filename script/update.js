@@ -5,9 +5,6 @@
  * Remove tags HTML, entidades &nbsp; e espaços extras
  * de campos textuais em documentos específicos.
  *
- * 🔧 Como usar:
- *   node update_clean_html.js
- *
  * 💡 Dica:
  * - Edite o nome da collection e a query.
  * - Ajuste os campos que deseja limpar.
@@ -26,11 +23,6 @@ function cleanText(text) {
   if (!text) return text;
   return text
     .replace(/<[^>]+>/g, '') // remove tags HTML
-    .replace(/&nbsp;/gi, ' ') // substitui &nbsp; por espaço
-    .replace(/;/g, '') // remove ponto e vírgula solto
-    .replace(/\r?\n|\r/g, ' ') // quebra de linha -> espaço
-    .replace(/\t/g, ' ') // tabulação -> espaço
-    .replace(/\s+/g, ' ') // compacta múltiplos espaços
     .normalize('NFD') // Normaliza acentuação Unicode
     .trim();
 }

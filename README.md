@@ -9,6 +9,7 @@ Esses utilitários foram criados para facilitar operações pontuais como **back
 
 1. Copie o arquivo `.env.example` para `.env`.
 2. Edite o arquivo `.env` e adicione suas credenciais e o nome do banco:
+3. Se você quiser testar seu script antes de executar as alterações no banco de forma permanente, adicione a variável DRY_RUN ao seu arquivo .env
 
 ```env
 MONGODB_URI=mongodb+srv://usuario:senha@host/dbname
