@@ -14,6 +14,7 @@ Esses utilitários foram criados para facilitar operações pontuais como **back
 ```env
 MONGODB_URI=mongodb+srv://usuario:senha@host/dbname
 DB_NAME=nome_do_banco
+DRY_RUN=true
 ````
 
 3. Instale as dependências necessárias:
